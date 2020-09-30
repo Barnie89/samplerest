@@ -184,6 +184,7 @@
             <version>2.7.0</version>
             <scope>compile</scope>
         </dependency>
+       
         <dependency>
             <groupId>com.github.lalyos</groupId>
             <artifactId>jfiglet</artifactId>
@@ -198,19 +199,34 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
-                    <skip>true</skip>
+                 <includes>
+                        <include>**/*ApiSuite.java</include>
+                       </includes>                   
                 </configuration>
             </plugin>
+           <plugin>
+
+<groupId>org.apache.maven.plugins</groupId>
+
+<artifactId>maven-compiler-plugin</artifactId>
+
+<version>3.8.1</version>
+
+<configuration>
+
+<verbose>true</verbose>
+
+<fork>true</fork>
+
+<executable>${JAVA_HOME}/bin/javac</executable>
+
+</configuration>
+
+</plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.1</version>
                 <configuration>
-                    <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/Test*.java</include>
-                        <include>**/*TestSuite.java</include>
-                        <include>**/When*.java</include>
-                    </includes>
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
                     </systemPropertyVariables>
@@ -256,30 +272,7 @@
 
             <!-- SpringBoot sample integration. This section starts the webservices under test
                  before the integration tests, and stops them afterwards-->
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.0.2.RELEASE</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>pre-integration-test</id>
-                        <goals>
-                            <goal>start</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>post-integration-test</id>
-                        <goals>
-                            <goal>stop</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+            
         </plugins>
     </build>
   
