@@ -5,11 +5,16 @@ import static org.junit.Assert.assertEquals;
 import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+
 import com.samplerest.data.data;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import net.serenitybdd.junit.runners.SerenityRunner;
 
+
+@RunWith(SerenityRunner.class)
 public class test04 extends data{
 
 	

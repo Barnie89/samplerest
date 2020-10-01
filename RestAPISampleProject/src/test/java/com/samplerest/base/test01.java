@@ -2,15 +2,18 @@ package com.samplerest.base;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+
 import com.samplerest.data.data;
 import static org.junit.Assert.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import net.serenitybdd.junit.runners.SerenityRunner;
 
 
-
+@RunWith(SerenityRunner.class)
 public class test01 extends data {
 
 	

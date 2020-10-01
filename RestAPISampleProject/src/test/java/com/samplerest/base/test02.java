@@ -6,12 +6,15 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import com.samplerest.data.data;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import net.serenitybdd.junit.runners.SerenityRunner;
 
+@RunWith(SerenityRunner.class)
 public class test02 extends data {
 	@Before
 	public void beforevalue(){
