@@ -2,27 +2,23 @@ package codingPractice;
 
 public class missingElementinArray {
 	
-	public static int missingNo(int n[])
-	{
-		
-		int m= n.length;
-		int sum=((m+1)*(m+2))/2;
-		for(int i=0;i<m;i++){
-			sum=sum-n[i];
-			
-		}
-		return sum;
-		
-	}
-
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		
 		
-		int arr[]={1,2,3,4,6};
-		System.out.println(missingNo(arr));
+		int arr[]={1,2,3,5,6};
+		int x =0;
+		int n= arr.length;
+		int total = ((n+1)*(n+2))/2;
 		
+		for(int i=0;i<n;i++)
+				{
+			x=x+arr[i];
+				}
+	
 	    
+	    int sum= total-x;
 	    
+	    System.out.println("Missing No "+sum);
 		
 
 	}

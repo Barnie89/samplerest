@@ -3,7 +3,7 @@ package codingPractice;
 public class maxArrayJava {
 
 	public static void main(String[] args) {
-		int arr[]={12,2,6,20};
+		int arr[]={12,2,6,20,100};
 		int max= arr[0];
         int n= arr.length;
         
