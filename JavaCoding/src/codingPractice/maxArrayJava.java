@@ -11,6 +11,7 @@ public class maxArrayJava {
         	if(arr[i]>max){
         		max= arr[i];
         	}
+        
         }
          System.out.println("max value "+ max);
 	}
