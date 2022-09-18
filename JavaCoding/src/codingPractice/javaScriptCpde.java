@@ -146,6 +146,83 @@
 //			console.log("Arrays contain Duplicate ",original)
 //			console.log("Arrays Not contain Duplicate ",duplicate)
 //
+//			var c= "9789726704"
+//
+//			console.log(c.substring(0,3)+-+c.substring(3,6)+-+c.substring(6,10))
+//			// Sum oF Odd nos in array
+//			var d=[1,2,3,4,5,6,8]
+//			n=d.length
+//			var f=[]
+//
+//			for( i=0;i<n;i++){
+//			    if(d[i]%2!==0){
+//			        console.log("Odd No "+d[i])
+//			        f.push(d[i])
+//			    }
+//			}
+//			var g=f.reduce(function(x,y){
+//			    return x+y
+//			})
+//
+//			console.log("Sum of odd nos "+g)
+//
+//			// Sum of even nos in array
+//
+//			var f= [1,2,3,4,5,6]
+//			n= f.length
+//			var  sum=0
+//			for( i=0;i<n;i++){
+//			    if(f[i]%2==0){
+//			        console.log("Even no ",f[i])
+//			        sum=sum+f[i]
+//			        
+//			    }
+//			}
+//			console.log("sum of even no ",sum)
+//
+//			//Moving Zero to End of Array
+//			var t1=[1,0,2,5,0,8,0,6]
+//			n=t1.length
+//			var counter=0
+//
+//			for(i=0;i<n;i++){
+//			    if(t1[i]!=0){
+//			        t1[counter]=t1[i]
+//			        counter++
+//			    }
+//			}
+//
+//			while(counter<n){
+//			    t1[counter]=0
+//			    counter++
+//			}
+//			for(i=0;i<n;i++)
+//			console.log(t1[i])
+//
+//
+//			//Second largest in array
+//			var i= [12,25,35,50,75]
+//			var sl,fl
+//			n= i.length
+//			if(i[0]>i[1]){
+//			    fl=i[0]
+//			    sl=i[1]
+//			}else{
+//			    sl=i[0]
+//			    fl=i[1]
+//			}
+//
+//			for(o=2;o<n;o++){
+//			    if(i[o]>fl){
+//			        sl=fl
+//			        fl=i[o]
+//			    }
+//			    else if(i[o]>sl&& i[o]<fl){
+//			        sl=i[o]
+//			    }
+//			}
+//
+//			console.log("Second largest ",sl)
 //
 //
 //}
