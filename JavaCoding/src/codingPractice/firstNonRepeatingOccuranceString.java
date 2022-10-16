@@ -1,6 +1,6 @@
 package codingPractice;
 
-public class firstOccuranceString {
+public class firstNonRepeatingOccuranceString {
 	
 	static char []count= new char[256];
 	static void getcount(String str){
